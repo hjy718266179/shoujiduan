@@ -4,21 +4,32 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title></title>
+		<style type="text/css">
+			div{
+				width: 12.5rem;
+				height: 12.5rem;
+				background: firebrick;
+			}
+		</style>
 	</head>
 	<script type="text/javascript">
 		var html = document.documentElement;
 		var htmlw = html.getBoundingClientRect().width;
 		html.style.fontSize=htmlw/16+'px';
 	</script>
-	<script type="text/javascript">
-		var div = document.querySelector("div");
-		div.addEventListener('touchstart',function(e){
-			e.changedTouches();
-		})
-	</script>
+	
 	<body>
+	
 		<header>
 			<div></div>
 		</header>
 	</body>
+	<script type="text/javascript">
+		var div = document.querySelector("div");
+		div.addEventListener('touchstart',function(e){			
+			if(e.changedTouches()==2){
+				
+			}
+		})
+	</script>
 </html>
